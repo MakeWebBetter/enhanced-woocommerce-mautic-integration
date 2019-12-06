@@ -1,1 +1,0 @@
-# enhanced-woocommerce-mautic-integration
