@@ -489,35 +489,31 @@ class Mautic_Woo_Admin {
 	 *
 	 * @since 1.0.3
 	 */
-	public function mautic_woo_contacts_sync_notice() {
+	
+	public function mauwoo_re_authorize_notice() {
 
-		$screen = get_current_screen();
+		global $mautic_woo;
 
-		if ( isset( $screen->id ) && 'woocommerce_page_mautic-woo' !== $screen->id ) {
+		if(  ! $mautic_woo->is_valid_client_id_stored() && $mautic_woo->is_setup_completed()) {
 
 			?>
-				<div class="notice notice-success is-dismissible" id="mautic_woo_contacts_sync_notice">
-				<p>
-			<?php
-
-			$count_users = get_option( 'total_count_of_users', true );
-			$count_order = get_option( 'mauwoo_guest_all_order', true );
-			$txt1        = sprintf( __( 'Integration with Mautic for WooCommerce:', 'mautic-woo' ) );
-			/* translators: %s: user count */
-			$txt2 = sprintf( __( 'Total users ready to sync :  %s , ', 'mautic-woo' ), $count_users );
-			/* translators: %s: guest count */
-			$txt3 = sprintf( __( ' Total guests orders ready to sync: %s ', 'mautic-woo' ), $count_order );
-
-			echo esc_html( $txt1 . $txt2 . $txt3 );
-			?>
+			<div class="notice notice-error is-dismissible"> 
 				
-				<a href="<?php echo esc_url( MAUTIC_WOO_PRO_LINK ); ?>" class="mauwoo_go_pro_link" style="float: right;"title="" target="_blank"><?php esc_html_e( ' Sync Now Go to pro', 'mautic-woo' ); ?></a>
+				<p class="mauwoo-acces-token-renewal">
+					<strong ><?php echo _e("You have lost the connection with Mautic. Please click the button to reauthorize with Mautic.","mautic-woo");?></strong>
+				
+					<a href= "<?php echo admin_url ( 'admin.php?page=mautic-woo&mauwoo_tab=mautic-woo-connect' ); ?>" class="mauwoo-reauthorize-app "><?php _e("Reauthorize with Mautic","mautic-woo")?><i class="fas fa-circle-notch fa-spin mauwoo-hide "></i></a>
+					
 				</p>
-				</div>
-				<?php
+
+				<button type="button" class="notice-dismiss">
+					<span class="screen-reader-text">Dismiss this notice.</span>
+				</button>
+			</div>
+
+			<?php
 		}
 	}
-
 
 }
 

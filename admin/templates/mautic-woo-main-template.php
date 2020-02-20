@@ -52,45 +52,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</div>
 	<div class="mauwoo-main-template">
 
-		<div class="mauwoo-header-prevdata-notice">
-
-			<div class="mauwoo-header-cron-notice-left">
-				<p>
-					<?php
-
-					$count_users = get_option( 'total_count_of_users', true );
-
-					/* translators: %s: user count */
-					$txt1 = sprintf( __( 'Total users ready to sync : %s ', 'mautic-woo' ), $count_users );
-
-					echo esc_html( $txt1 ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-
-
-					?>
-				</p>
-				<p>
-					<?php
-
-					$mautic_woo->mauwoo_guest_all_order();
-
-					$count_order = get_option( 'mauwoo_guest_all_order', true );
-
-					/* translators: %s: user count */
-					$txt2 = sprintf( __( 'Total guests orders ready to sync  : %s ', 'mautic-woo' ), $count_order );
-					echo esc_html( $txt2 ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-
-					?>
-				</p>
-			</div>
-
-			<div class="mauwoo-header-cron-notice-left">
-
-				<a id="mautic_go_pro_link" href="javascript:void(0)" class="mauwoo-sync-button"
-					title=""><?php esc_html_e( 'Sync now', 'mautic-woo' ); ?></a>
-
-			</div>
-		</div>
-
 		<!-- v.1.0.3 -->
 		<?php
 		if ( $mautic_woo->is_setup_completed() && wp_next_scheduled( 'mautic_woo_cron_schedule' ) ) {

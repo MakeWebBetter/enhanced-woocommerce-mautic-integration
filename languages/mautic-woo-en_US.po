@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Integration with Mautic for WooCommerce\n"
-"POT-Creation-Date: 2019-11-30 13:21+0530\n"
-"PO-Revision-Date: 2019-11-30 13:21+0530\n"
+"POT-Creation-Date: 2020-02-19 18:49+0530\n"
+"PO-Revision-Date: 2020-02-19 18:49+0530\n"
 "Last-Translator: \n"
 "Language-Team: MakeWebBetter\n"
 "Language: en\n"
@@ -10,9 +10,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.0.6\n"
-"X-Poedit-Basepath: .\n"
+"X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
 
 #: admin/class-mautic-woo-admin.php:128
 #, php-format
@@ -76,31 +77,17 @@ msgstr ""
 msgid " for more details."
 msgstr ""
 
+#: admin/class-mautic-woo-admin.php:503
+msgid ""
+"You have lost the connection with Mautic. Please click the button to "
+"reauthorize with Mautic."
+msgstr ""
+
 #: admin/class-mautic-woo-admin.php:505
-msgid "Integration with Mautic for WooCommerce:"
+msgid "Reauthorize with Mautic"
 msgstr ""
 
-#: admin/class-mautic-woo-admin.php:507
-#, php-format
-msgid "Total users ready to sync :  %s , "
-msgstr ""
-
-#: admin/class-mautic-woo-admin.php:509
-#, php-format
-msgid " Total guests orders ready to sync: %s "
-msgstr ""
-
-#: admin/templates/mautic-woo-main-template.php:64
-#, php-format
-msgid "Total users ready to sync : %s "
-msgstr ""
-
-#: admin/templates/mautic-woo-main-template.php:79
-#, php-format
-msgid "Total guests orders ready to sync  : %s "
-msgstr ""
-
-#: admin/templates/mautic-woo-main-template.php:105
+#: admin/templates/mautic-woo-main-template.php:66
 #, php-format
 msgid "Next Mautic Woocommerce sync :  %1$s at %2$s "
 msgstr ""
@@ -279,67 +266,67 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: includes/class-mautic-woo.php:264
+#: includes/class-mautic-woo.php:266
 msgid "Get Started"
 msgstr ""
 
-#: includes/class-mautic-woo.php:270
+#: includes/class-mautic-woo.php:272
 msgid "Overview"
 msgstr ""
 
-#: includes/class-mautic-woo.php:276
+#: includes/class-mautic-woo.php:278
 msgid "Connect"
 msgstr ""
 
-#: includes/class-mautic-woo.php:284
+#: includes/class-mautic-woo.php:286
 msgid "Custom Fields"
 msgstr ""
 
-#: includes/class-mautic-woo.php:290
+#: includes/class-mautic-woo.php:292
 msgid "Segments"
 msgstr ""
 
-#: includes/class-mautic-woo.php:296
+#: includes/class-mautic-woo.php:298
 msgid "RFM Settings"
 msgstr ""
 
-#: includes/class-mautic-woo.php:302
+#: includes/class-mautic-woo.php:304
 msgid "Coupon Codes"
 msgstr ""
 
-#: includes/class-mautic-woo.php:308
+#: includes/class-mautic-woo.php:310
 msgid "Field Sync"
 msgstr ""
 
-#: includes/class-mautic-woo.php:314
+#: includes/class-mautic-woo.php:316
 msgid "One-Click Sync"
 msgstr ""
 
-#: includes/class-mautic-woo.php:320
+#: includes/class-mautic-woo.php:322
 msgid "Abandoned Carts"
 msgstr ""
 
-#: includes/class-mautic-woo.php:326
+#: includes/class-mautic-woo.php:328
 msgid "Activity Sync"
 msgstr ""
 
-#: includes/class-mautic-woo.php:332
+#: includes/class-mautic-woo.php:334
 msgid "Site Tracking"
 msgstr ""
 
-#: includes/class-mautic-woo.php:338
+#: includes/class-mautic-woo.php:340
 msgid "Settings"
 msgstr ""
 
-#: includes/class-mautic-woo.php:344
+#: includes/class-mautic-woo.php:346
 msgid "Sync Log"
 msgstr ""
 
-#: includes/class-mautic-woo.php:350
+#: includes/class-mautic-woo.php:352
 msgid "Email Templates"
 msgstr ""
 
-#: includes/class-mautic-woo.php:400
+#: includes/class-mautic-woo.php:402
 #, php-format
 msgid ""
 "Unable to locate file path at location \"%s\". Some features may not work "

@@ -134,7 +134,7 @@ class MauticWooConnectionMananager {
 				'headers' => $headers,
 			)
 		);
-
+		//echo "<pre>"; print_r($response);die("okay");
 		if ( ! is_wp_error( $response ) ) {
 
 			$status_code = wp_remote_retrieve_response_code( $response );

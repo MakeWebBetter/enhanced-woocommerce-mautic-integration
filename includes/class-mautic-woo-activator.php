@@ -40,15 +40,5 @@ class Mautic_Woo_Activator {
 
 		update_option( 'mautic_woo_activation_time', time() );
 
-		$args1['meta_query'] = array(
-			array(
-				'key'     => 'mautic_woo_user_data_change',
-				'compare' => 'NOT EXISTS',
-			),
-		);
-
-		$users       = get_users( $args1 );
-		$count_users = count( $users );
-		update_option( 'total_count_of_users', $count_users );
 	}
 }

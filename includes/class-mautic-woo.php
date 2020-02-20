@@ -174,6 +174,8 @@ class Mautic_Woo {
 
 		if ( $this->is_setup_completed() ) {
 
+			$this->loader->add_action( 'admin_notices', $plugin_admin, 'mauwoo_re_authorize_notice' );
+			
 			if ( $this->mautic_woo_sync_method() === 'cron' ) {
 
 				$this->loader->add_action( 'profile_update', $plugin_admin, 'mautic_woo_update_changes' );

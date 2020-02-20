@@ -3,10 +3,10 @@ Contributors: MakeWebBetter
 Donate link:  https://makewebbetter.com/
 Tags: 	ecommerce, woocommerce, wordpress, mautic, automation, mautic integration, mautic woocommerce integration, woocommerce mautic integration, email automation, email marketing, open source crm, analytics, woocommerce with mautic, rfm segmentation, marketing, email
 Requires at least: 4.4
-Tested up to: 5.3.0
+Tested up to: 5.3.2
 WC requires at least: 3.0.0
-WC tested up to: 3.8.1
-Stable tag: 2.0.6
+WC tested up to: 3.9.2
+Stable tag: 2.0.7
 Requires PHP: 5.6
 License: GPLv3 or later 
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -15,9 +15,7 @@ Mautic for WooCommerce Plugin Connects WooCommerce store to Open-Source Marketin
 
 == Description ==
 
-***Integration with Mautic for WooCommerce** plugin allows you to automate your email marketing system to reduce the manual labour involved in tedious marketing masks. It helps sellers to integrate their WooCommerce store with Mautic in just a single click.*
-
-The extension creates best practiced custom fields for contacts on Mautic in order to store their real-time shopping data. As a result, the sellers can manage their follow ups through Mautic campaigns and emails based on the custom fields created by the plugin. The fields helps the seller in email marketing and decision making activities.
+**Integration with Mautic for WooCommerce** sends customers data of your WooCommerce store to mautic automatically. Merchants can segment their customers on behalf of this information for perfect targeting to increase conversion.
 
 
 == WHY GO FOR MAUTIC? ==
@@ -39,37 +37,42 @@ The extension continuously monitors the contacts activities on the store and cap
 
 == MAIN FEATURES ==
 
-* Best practiced custom fields for contacts. 
-* Sellers can enlist different segments based on the recent purchases of customers.
-* The seller can assign various rules to the different customer groups. 
-* Provides real-time user activity syncing. 
-* Real-time order details syncing. 
-* RFM Segmentation.
-* Add tags to your woocommerce contacts.
-* The Integration with Mautic for WooCommerce plugin is highly optimized and super flexible.
-* Optimized backend scheduler to sync real-time data to Mautic without affecting server performance. 
-* OAuth 2 for secure authentication of the plugin with Mautic.
+**1. Real-time Data Syncing**
+
+Provides real-time syncing of customer’s data between Mautic WooCommerce (For Registered Users Only).
+
+**2. Custom Fields**
+
+Creates 20 pre-defined custom fields to capture contact information based on the nature of your business. 
+
+**3. Contact Segments**
+
+Organize your contacts by dividing your target audience into segments. Segments can be created using custom fields created by the plugin.
+
+**4. RFM Segmentation**
+
+Target a specific group of customers with a particular buying behavior with RFM Analysis. Segment your WooCommerce contacts with RFM Ratings (Recency, Frequency, Monetary).
+
+**5. OAuth 2 for Secure Authentication**
+
+All the request made by this plugin is fully secured with OAuth 2. 
 
 
 == PREMIUM FEATURES ==
 
-* RFM Segmentation with more control over the RFM ratings.
-* Provides real-time user activity syncing for guest as well as registered users.
-* Real-time order details syncing.
-* Full history of products purchased.
-* Full purchase history of SKUs and categories.
-* Guest Customer Data Sync
-* Shopping cart details.
-* Support for more and best Contact fields.
-* Support for best practiced Mautic Segments.
-* One-Click sync for old users and customers.
-* Abandoned Cart Tracking for guests as well as registered customers
-* Assign coupon codes based on contact's RFM score.
-* Assign coupon codes to segments.
-* Assign tags based on users and order activity.
-* Site tracking with Mautic.
-* More advanced options for the ease of the user.
-
+* Sync Woocommerce Data Over Mautic Automatically (for Registered and Guest users)
+* Creates 65+ Best Practiced Mautic Custom Fields
+* Segment Woocommerce Customers With Predefined Segments
+* Convert Abandoned Carts Into Sales
+* Create Targeted And Converting Campaigns
+* Add Tags Based On User And Order Activities
+* Sync Historical Data Over Mautic With One-click Sync
+* Assign Coupon Codes To Contacts Dynamically based on their RFM rating
+* Assign coupon codes to segments in single click
+* Add Tags To Your Woocommerce Contacts based on their purchased products, categories, SKUs and user roles. 
+* Map your existing WordPress user fields over mautic with field to field sync
+* Implement mautic tracking script on your website to track user activities.
+* Optimized Backend Scheduler Syncs Real-time Data To Mautic Without Affecting Server Performance.
 
 
 For **Premium version**  [visit here](https://makewebbetter.com/mautic-woocommerce-integration-pro/?utm_source=MWB-mautic-org&utm_medium=MWB-org-page&utm_campaign=MWB-mautic-org)
@@ -258,9 +261,16 @@ Please check your mautic version. The latest release of mautic i.e. Version 2.15
 * Compatibility with Wordpress 5.3 Version 
 * Compatibility with Woocommerce 3.8.1 Version
 
+= 2.0.7 =
+* Bug Fixes
+* Added Re-authorization notice
+* Compatibility with Wordpress 5.3.2 Version 
+* Compatibility with Woocommerce 3.9.2 Version
+
 == Upgrade Notice ==
 
-= 2.0.6 =
-* Bug Fixes and Enhancement
-* Compatibility with Wordpress 5.3 Version 
-* Compatibility with Woocommerce 3.8.1 Version
+= 2.0.7 =
+* Bug Fixes
+* Add Re-authorization notice
+* Compatibility with Wordpress 5.3.2 Version 
+* Compatibility with Woocommerce 3.9.2 Version
