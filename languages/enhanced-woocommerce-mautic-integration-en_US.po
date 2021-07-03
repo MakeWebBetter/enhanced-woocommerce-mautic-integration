@@ -1,0 +1,334 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Integration with Mautic for WooCommerce\n"
+"POT-Creation-Date: 2021-05-08 12:33+0530\n"
+"PO-Revision-Date: 2021-05-08 12:33+0530\n"
+"Last-Translator: \n"
+"Language-Team: MakeWebBetter\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/class-mautic-woo-admin.php:108
+#, php-format
+msgid "Please enter in decimal (%s) format without thousand separators."
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:110
+#, php-format
+msgid ""
+"Please enter in monetary decimal (%s) format without thousand separators and "
+"currency symbols."
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:111
+msgid "Please enter in country code with two capital letters."
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:112
+msgid "Please enter in a value less than the regular price."
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:116
+msgid "Import"
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:117
+msgid "Export"
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:133
+msgid "Something went wrong, please try again later!"
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:134
+msgid "Setup is completed successfully!"
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:135
+msgid "Field created successfully"
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:136
+msgid "Setup completed!"
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:139
+msgid ""
+"It seems that no fields are selected. Please select atleast one field for "
+"the setup to start"
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:157
+msgid "Once every 5 minutes"
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:343
+msgid "Mautic Data Privacy"
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:343
+msgid " for more details."
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:392
+msgid ""
+"You have lost the connection with Mautic. Please click the button to "
+"reauthorize with Mautic."
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:393
+msgid "Reauthorize with Mautic"
+msgstr ""
+
+#: admin/templates/mautic-woo-main-template.php:72
+#, php-format
+msgid "Next Mautic Woocommerce sync :  %1$s at %2$s "
+msgstr ""
+
+#: admin/templates/mautic-woo-settings.php:57
+msgid ""
+"The orders with selected status will only be synced to Mautic. Default will "
+"be all order statuses."
+msgstr ""
+
+#: includes/class-mautic-woo-ajax-handler.php:77
+#: includes/class-mautic-woo-connection-manager.php:249
+#: includes/class-mautic-woo-connection-manager.php:263
+#: includes/class-mautic-woo-connection-manager.php:274
+#: includes/class-mautic-woo-connection-manager.php:363
+msgid "Success"
+msgstr ""
+
+#: includes/class-mautic-woo-ajax-handler.php:92
+msgid "Something went wrong, please check your Keys"
+msgstr ""
+
+#: includes/class-mautic-woo-ajax-handler.php:271
+msgid "Something went wrong, Please check logs"
+msgstr ""
+
+#: includes/class-mautic-woo-ajax-handler.php:311
+msgid "Field already exists"
+msgstr ""
+
+#: includes/class-mautic-woo-connection-manager.php:158
+msgid "Fetching and refreshing access token"
+msgstr ""
+
+#: includes/class-mautic-woo-connection-manager.php:165
+msgid "Something went wrong!. Please try again."
+msgstr ""
+
+#: includes/class-mautic-woo-connection-manager.php:172
+msgid "Something went wrong."
+msgstr ""
+
+#: includes/class-mautic-woo-connection-manager.php:192
+msgid "Failed in creating field"
+msgstr ""
+
+#: includes/class-mautic-woo-connection-manager.php:288
+msgid "Creating Custom Fields"
+msgstr ""
+
+#: includes/class-mautic-woo-connection-manager.php:306
+msgid "Failed to create or update contact."
+msgstr ""
+
+#: includes/class-mautic-woo-connection-manager.php:376
+msgid "Updating or Creating users data"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:123
+msgid "Customer Group"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:128
+msgid "Order"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:133
+msgid "RFM Information"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:225
+msgid "Customer Group/ User role"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:237
+msgid "Last Order Status"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:247
+msgid "Last Order Fulfillment Status"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:259
+msgid "Last Order Tracking Number"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:267
+msgid "Last Order Tracking URL"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:275
+msgid "Last Order Shipment Date"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:283
+msgid "Last Order Number"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:291
+msgid "Last Order Payment Method"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:299
+msgid "Total Number of Current Orders"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:309
+msgid "Total Value of Orders"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:317
+msgid "Average Order Value"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:325
+msgid "Total Number of Orders"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:333
+msgid "First Order Value"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:341
+msgid "First Order Date"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:349
+msgid "Last Order Value"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:357
+msgid "Last Order Date"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:365
+msgid "Account Creation Date"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:373
+msgid "Order Monetary Rating"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:383
+msgid "Order Frequency Rating"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:393
+msgid "Order Recency Rating"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:490
+msgid "5"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:494
+msgid "4"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:498
+msgid "3"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:502
+msgid "2"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:506
+msgid "1"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:529
+msgid "Yes"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:533
+msgid "No"
+msgstr ""
+
+#: includes/class-mautic-woo.php:281
+msgid "Get Started"
+msgstr ""
+
+#: includes/class-mautic-woo.php:287
+msgid "Overview"
+msgstr ""
+
+#: includes/class-mautic-woo.php:293
+msgid "Connect"
+msgstr ""
+
+#: includes/class-mautic-woo.php:301
+msgid "Custom Fields"
+msgstr ""
+
+#: includes/class-mautic-woo.php:307
+msgid "Segments"
+msgstr ""
+
+#: includes/class-mautic-woo.php:313
+msgid "RFM Settings"
+msgstr ""
+
+#: includes/class-mautic-woo.php:319
+msgid "Coupon Codes"
+msgstr ""
+
+#: includes/class-mautic-woo.php:325
+msgid "Field Sync"
+msgstr ""
+
+#: includes/class-mautic-woo.php:331
+msgid "One-Click Sync"
+msgstr ""
+
+#: includes/class-mautic-woo.php:337
+msgid "Abandoned Carts"
+msgstr ""
+
+#: includes/class-mautic-woo.php:343
+msgid "Activity Sync"
+msgstr ""
+
+#: includes/class-mautic-woo.php:349
+msgid "Site Tracking"
+msgstr ""
+
+#: includes/class-mautic-woo.php:355
+msgid "Settings"
+msgstr ""
+
+#: includes/class-mautic-woo.php:361
+msgid "Sync Log"
+msgstr ""
+
+#: includes/class-mautic-woo.php:367
+msgid "Email Templates"
+msgstr ""
+
+#: includes/class-mautic-woo.php:417
+#, php-format
+msgid ""
+"Unable to locate file path at location \"%s\". Some features may not work "
+"properly in Integration with Mautic for WooCommerce, please contact us!"
+msgstr ""

@@ -9,10 +9,10 @@
 
 ?>
 <div class="mauwoo-fields-header mauwoo-common-header text-center">
-	<h2><?php esc_html_e( 'Field to Field Sync', 'mautic-woo' ); ?></h2>
-	<a target="_blank" class="mauwoo-button" href=" <?php echo esc_url( MAUTIC_WOO_PRO_LINK ); ?> "><?php esc_html_e( 'Get this Feature Now', 'mautic-woo' ); ?></a>
+	<h2><?php esc_html_e( 'Field to Field Sync', 'enhanced-woocommerce-mautic-integration' ); ?></h2>
+	<a target="_blank" class="mauwoo-button" href=" <?php echo esc_url( MAUTIC_WOO_PRO_LINK ); ?> "><?php esc_html_e( 'Get this Feature Now', 'enhanced-woocommerce-mautic-integration' ); ?></a>
 </div>
-<p class="mauwoo_go_pro text-center"><?php esc_html_e( 'Easily Map existing mautic contact properties with the WordPress users’ fields (custom/default both). ', 'mautic-woo' ); ?>
+<p class="mauwoo_go_pro text-center"><?php esc_html_e( 'Easily Map existing mautic contact properties with the WordPress users’ fields (custom/default both). ', 'enhanced-woocommerce-mautic-integration' ); ?>
 </p>
 
 <a href="<?php echo esc_url( MAUTIC_WOO_PRO_LINK ); ?>" target="_blank">

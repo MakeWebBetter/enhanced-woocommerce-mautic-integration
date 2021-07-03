@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Integration with Mautic for WooCommerce\n"
-"POT-Creation-Date: 2020-02-19 18:49+0530\n"
-"PO-Revision-Date: 2020-02-19 18:49+0530\n"
+"Project-Id-Version: Mautic WooCommerce Integration\n"
+"POT-Creation-Date: 2019-08-27 16:39+0530\n"
+"PO-Revision-Date: 2019-08-27 16:39+0530\n"
 "Last-Translator: \n"
 "Language-Team: MakeWebBetter\n"
 "Language: en\n"
@@ -15,320 +15,1013 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: admin/class-mautic-woo-admin.php:128
+#: admin/class-mautic-woo-admin.php:78
+msgid "Mautic"
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:135
 #, php-format
 msgid "Please enter in decimal (%s) format without thousand separators."
 msgstr ""
 
-#: admin/class-mautic-woo-admin.php:130
+#: admin/class-mautic-woo-admin.php:137
 #, php-format
 msgid ""
 "Please enter in monetary decimal (%s) format without thousand separators and "
 "currency symbols."
 msgstr ""
 
-#: admin/class-mautic-woo-admin.php:131
+#: admin/class-mautic-woo-admin.php:138
 msgid "Please enter in country code with two capital letters."
 msgstr ""
 
-#: admin/class-mautic-woo-admin.php:132
+#: admin/class-mautic-woo-admin.php:139
 msgid "Please enter in a value less than the regular price."
 msgstr ""
 
-#: admin/class-mautic-woo-admin.php:136
+#: admin/class-mautic-woo-admin.php:143
 msgid "Import"
 msgstr ""
 
-#: admin/class-mautic-woo-admin.php:137
+#: admin/class-mautic-woo-admin.php:144
 msgid "Export"
 msgstr ""
 
-#: admin/class-mautic-woo-admin.php:154
+#: admin/class-mautic-woo-admin.php:158
 msgid "Something went wrong, please try again later!"
 msgstr ""
 
-#: admin/class-mautic-woo-admin.php:155
+#: admin/class-mautic-woo-admin.php:159
 msgid "Setup is completed successfully!"
 msgstr ""
 
-#: admin/class-mautic-woo-admin.php:156
+#: admin/class-mautic-woo-admin.php:160
 msgid "Field created successfully"
 msgstr ""
 
-#: admin/class-mautic-woo-admin.php:157
+#: admin/class-mautic-woo-admin.php:161
 msgid "Setup completed!"
 msgstr ""
 
-#: admin/class-mautic-woo-admin.php:160
+#: admin/class-mautic-woo-admin.php:164
 msgid ""
 "It seems that no fields are selected. Please select atleast one field for "
 "the setup to start"
 msgstr ""
 
-#: admin/class-mautic-woo-admin.php:181
+#: admin/class-mautic-woo-admin.php:185
 msgid "Once every 5 minutes"
 msgstr ""
 
-#: admin/class-mautic-woo-admin.php:428
+#: admin/class-mautic-woo-admin.php:422
+msgid "We use your email to send your Orders related data over Mautic."
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:424
+msgid ""
+"Mautic began with a single focus. Equality. The Mautic community believes in "
+"giving every person the power to understand, manage, and grow their business "
+"or organization. Mautic is focused on helping this belief become a reality "
+"by getting powerful marketing automation software into the hands of everyone."
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:426
+msgid "Please see the "
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:426
 msgid "Mautic Data Privacy"
 msgstr ""
 
-#: admin/class-mautic-woo-admin.php:428
+#: admin/class-mautic-woo-admin.php:426
 msgid " for more details."
 msgstr ""
 
-#: admin/class-mautic-woo-admin.php:503
+#: admin/class-mautic-woo-admin.php:429
+#: admin/templates/mautic-woo-main-template.php:18
+msgid "Mautic WooCommerce Integration"
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:447
+#: admin/templates/mautic_woo_connect.php:271
+msgid "Mautic APP Setup Guide"
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:448
+#: admin/templates/mautic_woo_connect.php:275
 msgid ""
-"You have lost the connection with Mautic. Please click the button to "
-"reauthorize with Mautic."
+"You can easily setup a new APP for connection with the extension by "
+"following these steps:"
 msgstr ""
 
-#: admin/class-mautic-woo-admin.php:505
-msgid "Reauthorize with Mautic"
+#: admin/class-mautic-woo-admin.php:452
+msgid "Navigate to Mautic Settings tab"
 msgstr ""
 
-#: admin/templates/mautic-woo-main-template.php:66
+#: admin/class-mautic-woo-admin.php:458
+#: admin/templates/mautic_woo_connect.php:283
+msgid "Go to API Credentials section to start with new APP."
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:464
+msgid "Click on New to create a fresh APP in mautic"
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:470
+msgid ""
+"Start creating new APP by filling valid credentials. Selct OAuth2 for "
+"authorization protocol, give a new name to APP and then use this Redirect "
+"URI for the APP:"
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:477
+#: admin/templates/mautic_woo_connect.php:304
+msgid ""
+"Save the APP and you will get the keys for connection. Use the keys as shown "
+"in image"
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:483
+#: admin/templates/mautic_woo_connect.php:311
+msgid ""
+"The refresh token is by default good for 14 days in which the user will need "
+"to reauthorize the application with Mautic. However, the refresh token’s "
+"expiration time is configurable through Mautic’s Configuration."
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:486
+msgid ""
+"You can set the Access token lifetime and Refresh token lifetime from Mautic "
+"> Settings > Configuration > API Settings section."
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:489
+msgid ""
+"Increasing the lifetime for access token and refresh token before connecting "
+"the extension to Mautic will be preferred. This will also avoid the manual "
+"reauthorization with Mautic app after refresh token expiration"
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:564
+msgid "<strong>Mautic WooCommerce Integration:</strong> "
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:565
 #, php-format
-msgid "Next Mautic Woocommerce sync :  %1$s at %2$s "
+msgid "Total users ready to sync : <strong> %s </strong>, "
 msgstr ""
 
-#: admin/templates/mautic-woo-settings.php:57
+#: admin/class-mautic-woo-admin.php:566
+#, php-format
+msgid " Total guests orders ready to sync: <strong> %s </strong> "
+msgstr ""
+
+#: admin/class-mautic-woo-admin.php:573
+msgid " Sync Now Go to pro"
+msgstr ""
+
+#: admin/templates/mautic-woo-main-template.php:23
+msgid "Go pro now"
+msgstr ""
+
+#: admin/templates/mautic-woo-main-template.php:24
+#: admin/templates/mautic_woo_themes.php:2
+msgid "Mautic Email Templates"
+msgstr ""
+
+#: admin/templates/mautic-woo-main-template.php:25
+msgid "Chat Now"
+msgstr ""
+
+#: admin/templates/mautic-woo-main-template.php:41
+#, php-format
+msgid "Total users ready to sync : <strong> %s </strong> "
+msgstr ""
+
+#: admin/templates/mautic-woo-main-template.php:54
+#, php-format
+msgid "Total guests orders ready to sync  : <strong> %s </strong> "
+msgstr ""
+
+#: admin/templates/mautic-woo-main-template.php:62
+msgid "Sync now"
+msgstr ""
+
+#: admin/templates/mautic-woo-main-template.php:69
+msgid "&times"
+msgstr ""
+
+#: admin/templates/mautic-woo-main-template.php:72
+msgid ""
+"You can sync all your previous customers and orders data over mautic by "
+"using \"One Click Sync\" feature of our pro plugin. Please upgrade to pro."
+msgstr ""
+
+#: admin/templates/mautic-woo-main-template.php:74
+msgid "Upgrade now"
+msgstr ""
+
+#: admin/templates/mautic-woo-main-template.php:101
+#, php-format
+msgid ""
+"Next Mautic Woocommerce sync : <strong> %s </strong> at <strong> %s </strong>"
+msgstr ""
+
+#: admin/templates/mautic_woo_abdn_cart.php:2
+msgid "Capture Abandoned Cart Data"
+msgstr ""
+
+#: admin/templates/mautic_woo_abdn_cart.php:3
+#: admin/templates/mautic_woo_coupon.php:3
+#: admin/templates/mautic_woo_one_click_sync.php:3
+#: admin/templates/mautic_woo_rfm.php:3
+#: admin/templates/mautic_woo_segments.php:4
+#: admin/templates/mautic_woo_sync.php:3
+#: admin/templates/mautic_woo_themes.php:3
+#: admin/templates/mautic_woo_tracking.php:3
+msgid "Get this Feature Now"
+msgstr ""
+
+#: admin/templates/mautic_woo_abdn_cart.php:5
+msgid ""
+"Sync abandoned cart data to mautic for your exsisting customer and guest "
+"users"
+msgstr ""
+
+#: admin/templates/mautic_woo_abdn_cart.php:6
+msgid ""
+"Convert your visitors into your customers, send them personalised emails"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:31
+msgid "Settings saved successfully."
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:62
+msgid "Please click the button to authorize with Mautic."
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:63
+msgid "Authorize"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:70
+msgid "Invalid Base URL passed for Mautic."
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:75
+msgid "Empty keys passed. Please check."
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:82
+msgid ""
+"Enter your Mautic base url, client and secret keys to connect with Mautic. "
+"Refer the below section to know more about APP setup in Mautic."
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:85
+msgid "Learn more how to setup new APP in Mautic to get keys for connection"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:86
+msgid "APP SETUP"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:89
+msgid "Connect with your Mautic Account"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:96
+msgid "Mautic Base URL"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:98
+msgid "http://your-mautic-url.com"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:103
+msgid "Mautic Client ID"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:106
+msgid "Mautic APP Client ID"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:110
+msgid "Mautic Secret ID"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:113
+msgid "Mautic APP Secret ID"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:117
+msgid "Save"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:129
+msgid "Mautic Connection"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:132
+msgid "Reset Connection"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:134
+#: admin/templates/mautic_woo_connect.php:251
+msgid "Support Plugin Development"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:141
+msgid "Connection Status"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:147
+msgid "Connected"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:155
+msgid "Account Email"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:171
+msgid "Token Renewal"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:201
+#: admin/templates/mautic_woo_connect.php:210
+msgid "Refresh Token"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:218
+msgid "Reauthorize Mautic APP"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:243
+msgid ""
+"Congratulations! your Mautic account has been successfully verified and "
+"connected."
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:245
+msgid "You are ready to go!"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:254
+#: admin/templates/mautic_woo_connect.php:258
+msgid "Proceed to Next Step"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:272
+#: admin/templates/mautic_woo_getstarted.php:26
+#: admin/templates/mautic_woo_getstarted.php:33
+#: admin/templates/mautic_woo_getstarted.php:42
+#: admin/templates/mautic_woo_getstarted.php:51
+#: admin/templates/mautic_woo_getstarted.php:60
+#: admin/templates/mautic_woo_getstarted.php:69
+#: admin/templates/mautic_woo_getstarted.php:78
+#: admin/templates/mautic_woo_getstarted.php:87
+msgid "X"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:277
+msgid "Navigate to Mautic Settings"
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:289
+msgid "Click on New to create a fresh APP in mautic "
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:295
+msgid ""
+"Start creating new APP by filling valid credentials. Selct OAuth2 for "
+"authorization protocol, give a new name to APP and then use this Redirect "
+"URI for the APP: "
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:312
+msgid ""
+"You can set the Access token lifetime and Refresh token lifetime from Mautic "
+"> Settings > Configuration > API Settings section. "
+msgstr ""
+
+#: admin/templates/mautic_woo_connect.php:313
+msgid ""
+"Increasing the lifetime for access token and refresh token before connecting "
+"the extension to Mautic will be preferred. This will also avoid the manual "
+"reauthorization with Mautic app after refresh token expiration "
+msgstr ""
+
+#: admin/templates/mautic_woo_coupon.php:2
+msgid "Create Dynamic Coupons "
+msgstr ""
+
+#: admin/templates/mautic_woo_coupon.php:5
+msgid "Create dynamic coupons for your Customers based on their RFM ratings."
+msgstr ""
+
+#: admin/templates/mautic_woo_custom_fields.php:14
+msgid "Fields saved successfully."
+msgstr ""
+
+#: admin/templates/mautic_woo_custom_fields.php:21
+msgid "Mautic Custom Fields"
+msgstr ""
+
+#: admin/templates/mautic_woo_custom_fields.php:42
+msgid ""
+"Before we start with the custom fields setup, will you like to filter the "
+"fields before creating them? Filtering the fields will allow you to select "
+"the fields which you want to be created in your Mautic account."
+msgstr ""
+
+#: admin/templates/mautic_woo_custom_fields.php:45
+msgid "Yes, allow me to filter"
+msgstr ""
+
+#: admin/templates/mautic_woo_custom_fields.php:46
+msgid "I will like to go with the extension."
+msgstr ""
+
+#: admin/templates/mautic_woo_custom_fields.php:57
+msgid ""
+"These are the custom fields which will be created by the extension on your "
+"Mautic account or if you want, can change your decision."
+msgstr ""
+
+#: admin/templates/mautic_woo_custom_fields.php:103
+msgid ""
+"Start selecting fields those you want to create on your Mautic account or if "
+"you want, can change your decision."
+msgstr ""
+
+#: admin/templates/mautic_woo_custom_fields.php:104
+msgid "Select all"
+msgstr ""
+
+#: admin/templates/mautic_woo_custom_fields.php:105
+msgid "Clear"
+msgstr ""
+
+#: admin/templates/mautic_woo_custom_fields.php:182
+msgid "Save Changes"
+msgstr ""
+
+#: admin/templates/mautic_woo_custom_fields.php:193
+msgid ""
+"We are setting up, Please do not navigate or reload the page before our "
+"confirmation message."
+msgstr ""
+
+#: admin/templates/mautic_woo_custom_fields.php:204
+msgid "Start Setup"
+msgstr ""
+
+#: admin/templates/mautic_woo_custom_fields.php:206
+msgid "Change Decision"
+msgstr ""
+
+#: admin/templates/mautic_woo_custom_fields.php:219
+msgid ""
+"Fields overview to see which are on your Mautic account. You can create new "
+"fields directly from here"
+msgstr ""
+
+#: admin/templates/mautic_woo_custom_fields.php:223
+msgid "Field Name"
+msgstr ""
+
+#: admin/templates/mautic_woo_custom_fields.php:224
+msgid "Action"
+msgstr ""
+
+#: admin/templates/mautic_woo_custom_fields.php:254
+msgid "Create"
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:2
+#: admin/templates/mautic_woo_overview.php:52 includes/class-mautic-woo.php:271
+msgid "Get Started"
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:4
+msgid ""
+"Mautic WooCommerce Integration plugin allows you to automate your email "
+"marketing system to reduce the manual labour involved in tedious marketing "
+"masks. It helps sellers to integrate their WooCommerce store with Mautic in "
+"just a single click."
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:10
+msgid "Feature"
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:11
+msgid "Free "
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:12
+msgid "Pro"
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:15
+msgid "Contacts Sync"
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:16
+msgid "Registered Users"
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:17
+msgid "Registered, Guest Users and Cart Abandoners"
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:20
+#: includes/class-mautic-woo.php:281
+msgid "Custom Fields"
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:21
+msgid "Only 20 Fields"
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:22
+msgid "70+ Fields"
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:25
+#: includes/class-mautic-woo.php:283
+msgid "Segments"
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:27
+msgid "18 Best Practice Segments"
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:32
+msgid "RFM Ratings"
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:41
+msgid "Dynamic Copoun Code Generation"
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:50
+msgid "Copoun Code for Segments"
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:59
+msgid "Field to Field Mapping"
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:68
+msgid "One-Click Sync for Historical data"
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:77
+msgid "Abandoned Cart Tracking"
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:86
+#: includes/class-mautic-woo.php:297
+msgid "Site Tracking"
+msgstr ""
+
+#: admin/templates/mautic_woo_getstarted.php:99
+msgid "BUY PREMIUM NOW "
+msgstr ""
+
+#: admin/templates/mautic_woo_log.php:4
+msgid "Mautic WooCommerce Sync Log"
+msgstr ""
+
+#: admin/templates/mautic_woo_log.php:7
+msgid "Download Log File"
+msgstr ""
+
+#: admin/templates/mautic_woo_log.php:9
+msgid "Clear Log File"
+msgstr ""
+
+#: admin/templates/mautic_woo_one_click_sync.php:2
+msgid "Sync Old Orders and Customers with One Click Sync feature"
+msgstr ""
+
+#: admin/templates/mautic_woo_one_click_sync.php:5
+msgid ""
+"Date wise syncs all your previous store orders to Mautic with just a single "
+"click. "
+msgstr ""
+
+#: admin/templates/mautic_woo_one_click_sync.php:6
+msgid ""
+"Syncs all previous store users according to wordpress roles to Mautic with "
+"just a single click.. "
+msgstr ""
+
+#: admin/templates/mautic_woo_overview.php:15
+msgid "How our Integration works?"
+msgstr ""
+
+#: admin/templates/mautic_woo_overview.php:19
+msgid "What we create?"
+msgstr ""
+
+#: admin/templates/mautic_woo_overview.php:21
+msgid "Contact Fields"
+msgstr ""
+
+#: admin/templates/mautic_woo_overview.php:26
+msgid "How easy is it?"
+msgstr ""
+
+#: admin/templates/mautic_woo_overview.php:28
+msgid "Just 2 steps to Go!"
+msgstr ""
+
+#: admin/templates/mautic_woo_overview.php:33
+msgid "What at the End?"
+msgstr ""
+
+#: admin/templates/mautic_woo_overview.php:35
+msgid "Automated Marketing"
+msgstr ""
+
+#: admin/templates/mautic_woo_overview.php:46
+msgid "Next"
+msgstr ""
+
+#: admin/templates/mautic_woo_premium.php:6
+msgid "Mautic WooCommerce Integration PRO"
+msgstr ""
+
+#: admin/templates/mautic_woo_premium.php:10
+msgid "Why better to use "
+msgstr ""
+
+#: admin/templates/mautic_woo_premium.php:10
+msgid "Mautic WooCommerce Integration Pro"
+msgstr ""
+
+#: admin/templates/mautic_woo_premium.php:12
+msgid "Go Pro Now"
+msgstr ""
+
+#: admin/templates/mautic_woo_premium.php:13
+msgid ""
+"If you don't like the pro features, you can rollback to free at any time."
+msgstr ""
+
+#: admin/templates/mautic_woo_premium.php:16
+msgid "Our Premium Features"
+msgstr ""
+
+#: admin/templates/mautic_woo_premium.php:18
+msgid "Supports More custom fields"
+msgstr ""
+
+#: admin/templates/mautic_woo_premium.php:19
+msgid "Support for Mautic Segments"
+msgstr ""
+
+#: admin/templates/mautic_woo_premium.php:20
+msgid "Guest User Data Sync"
+msgstr ""
+
+#: admin/templates/mautic_woo_premium.php:21
+msgid "Site tracking with Mautic"
+msgstr ""
+
+#: admin/templates/mautic_woo_premium.php:22
+msgid "Full history of products bought"
+msgstr ""
+
+#: admin/templates/mautic_woo_premium.php:23
+msgid "Full history of categories bought"
+msgstr ""
+
+#: admin/templates/mautic_woo_premium.php:24
+msgid "Full history of skus bought"
+msgstr ""
+
+#: admin/templates/mautic_woo_premium.php:25
+msgid "Shopping cart details"
+msgstr ""
+
+#: admin/templates/mautic_woo_premium.php:26
+msgid "Sync old users in a single click"
+msgstr ""
+
+#: admin/templates/mautic_woo_premium.php:27
+msgid "Abandoned Cart Details"
+msgstr ""
+
+#: admin/templates/mautic_woo_premium.php:28
+msgid "More advanced settings"
+msgstr ""
+
+#: admin/templates/mautic_woo_premium.php:32
+msgid "Purchase Now for $79 Only"
+msgstr ""
+
+#: admin/templates/mautic_woo_rfm.php:2
+msgid "Target your customers using RFM settings"
+msgstr ""
+
+#: admin/templates/mautic_woo_rfm.php:5
+#, php-format
+msgid ""
+"Create different types of customer segments with RFM analysis, Instead of "
+"reaching out to 100% of your audience, you need to identify and target only "
+"specific customer groups that will turn out to be most profitable for your "
+"business."
+msgstr ""
+
+#: admin/templates/mautic_woo_segments.php:2
+msgid "Segment your woocommerce users"
+msgstr ""
+
+#: admin/templates/mautic_woo_segments.php:6
+msgid ""
+"Create Contact Segments in mautic on the basis of your WooCommerce store "
+"data."
+msgstr ""
+
+#: admin/templates/mautic_woo_settings.php:3
+msgid "General Settings"
+msgstr ""
+
+#: admin/templates/mautic_woo_settings.php:29
+msgid "Settings saved"
+msgstr ""
+
+#: admin/templates/mautic_woo_settings.php:35
+msgid "Sync orders with status"
+msgstr ""
+
+#: admin/templates/mautic_woo_settings.php:37
 msgid ""
 "The orders with selected status will only be synced to Mautic. Default will "
 "be all order statuses."
 msgstr ""
 
-#: includes/class-mautic-woo-ajax-handler.php:77
-#: includes/class-mautic-woo-connection-manager.php:249
-#: includes/class-mautic-woo-connection-manager.php:263
-#: includes/class-mautic-woo-connection-manager.php:274
-#: includes/class-mautic-woo-connection-manager.php:363
-msgid "Success"
+#: admin/templates/mautic_woo_settings.php:58
+msgid "Disable Custom fields"
 msgstr ""
 
-#: includes/class-mautic-woo-ajax-handler.php:92
-msgid "Something went wrong, please check your Keys"
+#: admin/templates/mautic_woo_settings.php:60
+msgid "The data sync will be stop for selected fields"
 msgstr ""
 
-#: includes/class-mautic-woo-ajax-handler.php:271
-msgid "Something went wrong, Please check logs"
+#: admin/templates/mautic_woo_settings.php:87
+msgid "Custom Contact Tags"
 msgstr ""
 
-#: includes/class-mautic-woo-ajax-handler.php:311
-msgid "Field already exists"
+#: admin/templates/mautic_woo_settings.php:89
+msgid ""
+"Enter text to be added as tags to each contact. For multiple tags separate "
+"them with comma, i.e. tag1 , tag2"
 msgstr ""
 
-#: includes/class-mautic-woo-connection-manager.php:158
-msgid "Fetching and refreshing access token"
+#: admin/templates/mautic_woo_settings.php:99
+msgid "Save settings"
 msgstr ""
 
-#: includes/class-mautic-woo-connection-manager.php:165
-msgid "Something went wrong!. Please try again."
+#: admin/templates/mautic_woo_sync.php:2
+msgid "Field to Field Sync"
 msgstr ""
 
-#: includes/class-mautic-woo-connection-manager.php:172
-msgid "Something went wrong."
+#: admin/templates/mautic_woo_sync.php:5
+msgid ""
+"Easily Map existing mautic contact properties with the WordPress users’ "
+"fields (custom/default both). "
 msgstr ""
 
-#: includes/class-mautic-woo-connection-manager.php:192
-msgid "Failed in creating field"
+#: admin/templates/mautic_woo_themes.php:10
+msgid "Browse More"
 msgstr ""
 
-#: includes/class-mautic-woo-connection-manager.php:288
-msgid "Creating Custom Fields"
+#: admin/templates/mautic_woo_tracking.php:2
+msgid "Track visitors on your site."
 msgstr ""
 
-#: includes/class-mautic-woo-connection-manager.php:306
-msgid "Failed to create or update contact."
-msgstr ""
-
-#: includes/class-mautic-woo-connection-manager.php:376
-msgid "Updating or Creating users data"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:123
-msgid "Customer Group"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:128
-msgid "Order"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:133
-msgid "RFM Information"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:225
-msgid "Customer Group/ User role"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:237
-msgid "Last Order Status"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:247
-msgid "Last Order Fulfillment Status"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:259
-msgid "Last Order Tracking Number"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:267
-msgid "Last Order Tracking URL"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:275
-msgid "Last Order Shipment Date"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:283
-msgid "Last Order Number"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:291
-msgid "Last Order Payment Method"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:299
-msgid "Total Number of Current Orders"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:309
-msgid "Total Value of Orders"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:317
-msgid "Average Order Value"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:325
-msgid "Total Number of Orders"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:333
-msgid "First Order Value"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:341
-msgid "First Order Date"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:349
-msgid "Last Order Value"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:357
-msgid "Last Order Date"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:365
-msgid "Account Creation Date"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:373
-msgid "Order Monetary Rating"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:383
-msgid "Order Frequency Rating"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:393
-msgid "Order Recency Rating"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:490
-msgid "5"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:494
-msgid "4"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:498
-msgid "3"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:502
-msgid "2"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:506
-msgid "1"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:529
-msgid "Yes"
-msgstr ""
-
-#: includes/class-mautic-woo-contact-properties.php:533
-msgid "No"
-msgstr ""
-
-#: includes/class-mautic-woo.php:266
-msgid "Get Started"
-msgstr ""
-
-#: includes/class-mautic-woo.php:272
-msgid "Overview"
-msgstr ""
-
-#: includes/class-mautic-woo.php:278
-msgid "Connect"
-msgstr ""
-
-#: includes/class-mautic-woo.php:286
-msgid "Custom Fields"
-msgstr ""
-
-#: includes/class-mautic-woo.php:292
-msgid "Segments"
-msgstr ""
-
-#: includes/class-mautic-woo.php:298
-msgid "RFM Settings"
-msgstr ""
-
-#: includes/class-mautic-woo.php:304
-msgid "Coupon Codes"
-msgstr ""
-
-#: includes/class-mautic-woo.php:310
-msgid "Field Sync"
-msgstr ""
-
-#: includes/class-mautic-woo.php:316
-msgid "One-Click Sync"
-msgstr ""
-
-#: includes/class-mautic-woo.php:322
-msgid "Abandoned Carts"
-msgstr ""
-
-#: includes/class-mautic-woo.php:328
-msgid "Activity Sync"
-msgstr ""
-
-#: includes/class-mautic-woo.php:334
-msgid "Site Tracking"
-msgstr ""
-
-#: includes/class-mautic-woo.php:340
+#: enhanced-woocommerce-mautic-integration.php:132
+#: includes/class-mautic-woo.php:299
 msgid "Settings"
 msgstr ""
 
-#: includes/class-mautic-woo.php:346
+#: enhanced-woocommerce-mautic-integration.php:210
+#: enhanced-woocommerce-mautic-integration.php:219
+msgid ""
+"WooCommerce is not activated, Please activate WooCommerce first to install "
+"Mautic WooCommerce Integration."
+msgstr ""
+
+#: enhanced-woocommerce-mautic-integration.php:214
+msgid ""
+"Mautic WooCommerce Marketing Automation is activated, Please de-activate "
+"that first to install Mautic WooCommerce Integration."
+msgstr ""
+
+#: includes/class-mautic-woo-ajax-handler.php:76
+#: includes/class-mautic-woo-connection-manager.php:250
+#: includes/class-mautic-woo-connection-manager.php:265
+#: includes/class-mautic-woo-connection-manager.php:276
+#: includes/class-mautic-woo-connection-manager.php:362
+msgid "Success"
+msgstr ""
+
+#: includes/class-mautic-woo-ajax-handler.php:90
+msgid "Something went wrong, please check your Keys"
+msgstr ""
+
+#: includes/class-mautic-woo-connection-manager.php:136
+msgid "Fetching and refreshing access token"
+msgstr ""
+
+#: includes/class-mautic-woo-connection-manager.php:143
+msgid "Something went wrong!. Please try again."
+msgstr ""
+
+#: includes/class-mautic-woo-connection-manager.php:151
+msgid "Something went wrong."
+msgstr ""
+
+#: includes/class-mautic-woo-connection-manager.php:196
+msgid "Failed in creating field"
+msgstr ""
+
+#: includes/class-mautic-woo-connection-manager.php:291
+msgid "Creating Custom Fields"
+msgstr ""
+
+#: includes/class-mautic-woo-connection-manager.php:307
+msgid "Failed to create or update contact."
+msgstr ""
+
+#: includes/class-mautic-woo-connection-manager.php:373
+msgid "Updating or Creating users data"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:124
+msgid "Customer Group"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:126
+msgid "Order"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:128
+msgid "RFM Information"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:221
+msgid "Customer Group/ User role"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:234
+msgid "Last Order Status"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:244
+msgid "Last Order Fulfillment Status"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:256
+msgid "Last Order Tracking Number"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:264
+msgid "Last Order Tracking URL"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:272
+msgid "Last Order Shipment Date"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:280
+msgid "Last Order Number"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:288
+msgid "Last Order Payment Method"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:296
+msgid "Total Number of Current Orders"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:306
+msgid "Total Value of Orders"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:314
+msgid "Average Order Value"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:322
+msgid "Total Number of Orders"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:330
+msgid "First Order Value"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:338
+msgid "First Order Date"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:346
+msgid "Last Order Value"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:354
+msgid "Last Order Date"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:362
+msgid "Account Creation Date"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:370
+msgid "Order Monetary Rating"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:380
+msgid "Order Frequency Rating"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:390
+msgid "Order Recency Rating"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:474
+msgid "5"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:475
+msgid "4"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:476
+msgid "3"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:477
+msgid "2"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:478
+msgid "1"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:495
+msgid "Yes"
+msgstr ""
+
+#: includes/class-mautic-woo-contact-properties.php:496
+msgid "No"
+msgstr ""
+
+#: includes/class-mautic-woo.php:275
+msgid "Overview"
+msgstr ""
+
+#: includes/class-mautic-woo.php:277
+msgid "Connect"
+msgstr ""
+
+#: includes/class-mautic-woo.php:285
+msgid "RFM Settings"
+msgstr ""
+
+#: includes/class-mautic-woo.php:287
+msgid "Coupon Codes"
+msgstr ""
+
+#: includes/class-mautic-woo.php:289
+msgid "Field Sync"
+msgstr ""
+
+#: includes/class-mautic-woo.php:292
+msgid "One-Click Sync"
+msgstr ""
+
+#: includes/class-mautic-woo.php:294
+msgid "Abandoned Carts"
+msgstr ""
+
+#: includes/class-mautic-woo.php:301
 msgid "Sync Log"
 msgstr ""
 
-#: includes/class-mautic-woo.php:352
+#: includes/class-mautic-woo.php:303
 msgid "Email Templates"
 msgstr ""
 
-#: includes/class-mautic-woo.php:402
+#: includes/class-mautic-woo.php:343
 #, php-format
 msgid ""
 "Unable to locate file path at location \"%s\". Some features may not work "
-"properly in Integration with Mautic for WooCommerce, please contact us!"
+"properly in Mautic WooCommerce Integration, please contact us!"
 msgstr ""

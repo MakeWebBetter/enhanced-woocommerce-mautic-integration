@@ -19,14 +19,14 @@ if ( ! is_dir( $log_dir ) ) {
 <div class="mauwoo-error-log-wrap">
 	<div class="mauwoo-error-log-head">
 		<div class="mauwoo-error-log-head-left">
-			<h3><?php esc_html_e( 'Mautic WooCommerce Sync Log', 'mautic-woo' ); ?></h3>
+			<h3><?php esc_html_e( 'Mautic WooCommerce Sync Log', 'enhanced-woocommerce-mautic-integration' ); ?></h3>
 		</div>
 		<div class="mauwoo-error-log-head-right">
 			<a href="<?php echo esc_url( wp_nonce_url( admin_url( 'admin.php?page=mautic-woo&mauwoo_tab=mautic-woo-log&action=download_log' ), 'mautic-woo-get', 'mautic-woo-get' ) ); ?>"
-				class="mauwoo-sync-button"><?php esc_html_e( 'Download Log File', 'mautic-woo' ); ?>
+				class="mauwoo-sync-button"><?php esc_html_e( 'Download Log File', 'enhanced-woocommerce-mautic-integration' ); ?>
 			</a>
 			<a href="<?php echo esc_url( wp_nonce_url( admin_url( 'admin.php?page=mautic-woo&mauwoo_tab=mautic-woo-log&action=clear_log' ), 'mautic-woo-get', 'mautic-woo-get' ) ); ?>"
-				class="mauwoo-sync-button"><?php esc_html_e( 'Clear Log File', 'mautic-woo' ); ?>
+				class="mauwoo-sync-button"><?php esc_html_e( 'Clear Log File', 'enhanced-woocommerce-mautic-integration' ); ?>
 			</a>
 		</div>
 	</div>
@@ -39,7 +39,7 @@ if ( ! is_dir( $log_dir ) ) {
 			?>
 			</pre>
 		<?php } else { ?>
-		<pre><strong><?php esc_html_e( 'Log file:mautic-woo-logs.log not found', 'mautic-woo' ); ?></strong></pre>
+		<pre><strong><?php esc_html_e( 'Log file:mautic-woo-logs.log not found', 'enhanced-woocommerce-mautic-integration' ); ?></strong></pre>
 		<?php } ?>
 	</div>
 </div>

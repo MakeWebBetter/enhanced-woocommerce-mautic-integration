@@ -111,8 +111,6 @@ class Mautic_Woo {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-mautic-woo-public.php';
 
-		$this->loader = new Mautic_Woo_Loader();
-
 		/**
 		 * The class responsible for all api actions with mautic.
 		 */
@@ -138,6 +136,23 @@ class Mautic_Woo {
 		 * The class responsible for handling ajax requests.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-mautic-woo-ajax-handler.php';
+
+		/**
+		 * The class responsible for defining all actions that occur in the onboarding the site data
+		 * in the admin side of the site.
+		 */
+		if ( ! class_exists( 'Makewebbetter_Onboarding_Helper' ) ) {
+
+			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-makewebbetter-onboarding-helper.php';
+		}
+
+		if ( class_exists( 'Makewebbetter_Onboarding_Helper' ) ) {
+
+			$this->onboard = new Makewebbetter_Onboarding_Helper();
+		}
+
+		$this->loader = new Mautic_Woo_Loader();
+
 	}
 
 	/**
@@ -175,7 +190,7 @@ class Mautic_Woo {
 		if ( $this->is_setup_completed() ) {
 
 			$this->loader->add_action( 'admin_notices', $plugin_admin, 'mauwoo_re_authorize_notice' );
-			
+
 			if ( $this->mautic_woo_sync_method() === 'cron' ) {
 
 				$this->loader->add_action( 'profile_update', $plugin_admin, 'mautic_woo_update_changes' );
@@ -199,9 +214,9 @@ class Mautic_Woo {
 		$plugin_public = new Mautic_Woo_Public( $this->get_plugin_name(), $this->get_version() );
 		if ( self::mautic_woo_sync_method() === 'cron' ) {
 
-				$this->loader->add_action( 'profile_update', $plugin_public, 'mautic_woo_save_account_details' );
-				$this->loader->add_action( 'user_register', $plugin_public, 'mautic_woo_save_account_details' );
-				$this->loader->add_action( 'woocommerce_checkout_update_user_meta', $plugin_public, 'mautic_woo_save_account_details' );
+			$this->loader->add_action( 'profile_update', $plugin_public, 'mautic_woo_save_account_details' );
+			$this->loader->add_action( 'user_register', $plugin_public, 'mautic_woo_save_account_details' );
+			$this->loader->add_action( 'woocommerce_checkout_update_user_meta', $plugin_public, 'mautic_woo_save_account_details' );
 		}
 
 		if ( self::mautic_woo_sync_method() === 'instant' ) {
@@ -263,19 +278,19 @@ class Mautic_Woo {
 		$default_tabs = array();
 
 		$default_tabs['mautic-woo-getstarted'] = array(
-			'name'       => __( 'Get Started', 'mautic-woo' ),
+			'name'       => __( 'Get Started', 'enhanced-woocommerce-mautic-integration' ),
 			'dependency' => '',
 			'icon'       => 'fa fa-th-large',
 		);
 
 		$default_tabs['mautic-woo-overview'] = array(
-			'name'       => __( 'Overview', 'mautic-woo' ),
+			'name'       => __( 'Overview', 'enhanced-woocommerce-mautic-integration' ),
 			'dependency' => '',
 			'icon'       => 'fa fa-life-ring',
 		);
 
 		$default_tabs['mautic-woo-connect'] = array(
-			'name'       => __( 'Connect', 'mautic-woo' ),
+			'name'       => __( 'Connect', 'enhanced-woocommerce-mautic-integration' ),
 			'dependency' => array( 'mautic_woo_get_started' ),
 			'icon'       => 'fas fa-link',
 		);
@@ -283,73 +298,73 @@ class Mautic_Woo {
 		$common_dependency = array( 'is_setup_completed', 'is_valid_client_id_stored' );
 
 		$default_tabs['mautic-woo-custom-fields'] = array(
-			'name'       => __( 'Custom Fields', 'mautic-woo' ),
+			'name'       => __( 'Custom Fields', 'enhanced-woocommerce-mautic-integration' ),
 			'dependency' => array( 'is_oauth_success', 'is_valid_client_id_stored' ),
 			'icon'       => 'fa fa-list',
 		);
 
 		$default_tabs['mautic-woo-segments'] = array(
-			'name'       => __( 'Segments', 'mautic-woo' ),
+			'name'       => __( 'Segments', 'enhanced-woocommerce-mautic-integration' ),
 			'dependency' => $common_dependency,
 			'icon'       => 'fas fa-chart-pie',
 		);
 
 		$default_tabs['mautic-woo-rfm'] = array(
-			'name'       => __( 'RFM Settings', 'mautic-woo' ),
+			'name'       => __( 'RFM Settings', 'enhanced-woocommerce-mautic-integration' ),
 			'dependency' => $common_dependency,
 			'icon'       => 'fas fa-star',
 		);
 
 		$default_tabs['mautic-woo-coupon'] = array(
-			'name'       => __( 'Coupon Codes', 'mautic-woo' ),
+			'name'       => __( 'Coupon Codes', 'enhanced-woocommerce-mautic-integration' ),
 			'dependency' => $common_dependency,
 			'icon'       => 'fas fa-tags',
 		);
 
 		$default_tabs['mautic-woo-sync'] = array(
-			'name'       => __( 'Field Sync', 'mautic-woo' ),
+			'name'       => __( 'Field Sync', 'enhanced-woocommerce-mautic-integration' ),
 			'dependency' => $common_dependency,
 			'icon'       => 'fas fa-exchange-alt',
 		);
 
 		$default_tabs['mautic-woo-one-click-sync'] = array(
-			'name'       => __( 'One-Click Sync', 'mautic-woo' ),
+			'name'       => __( 'One-Click Sync', 'enhanced-woocommerce-mautic-integration' ),
 			'dependency' => $common_dependency,
 			'icon'       => 'fas fa-sync',
 		);
 
 		$default_tabs['mautic-woo-abdn-cart'] = array(
-			'name'       => __( 'Abandoned Carts', 'mautic-woo' ),
+			'name'       => __( 'Abandoned Carts', 'enhanced-woocommerce-mautic-integration' ),
 			'dependency' => $common_dependency,
 			'icon'       => 'fas fa-shopping-cart',
 		);
 
 		$default_tabs['mautic-woo-activity'] = array(
-			'name'       => __( 'Activity Sync', 'mautic-woo' ),
+			'name'       => __( 'Activity Sync', 'enhanced-woocommerce-mautic-integration' ),
 			'dependency' => $common_dependency,
 			'icon'       => 'fa fa-tasks',
 		);
 
 		$default_tabs['mautic-woo-tracking'] = array(
-			'name'       => __( 'Site Tracking', 'mautic-woo' ),
+			'name'       => __( 'Site Tracking', 'enhanced-woocommerce-mautic-integration' ),
 			'dependency' => $common_dependency,
 			'icon'       => 'fas fa-chart-line',
 		);
 
 		$default_tabs['mautic-woo-settings'] = array(
-			'name'       => __( 'Settings', 'mautic-woo' ),
+			'name'       => __( 'Settings', 'enhanced-woocommerce-mautic-integration' ),
 			'dependency' => $common_dependency,
 			'icon'       => 'fa fa-cogs',
 		);
 
 		$default_tabs['mautic-woo-log'] = array(
-			'name'       => __( 'Sync Log', 'mautic-woo' ),
+			'name'       => __( 'Sync Log', 'enhanced-woocommerce-mautic-integration' ),
 			'dependency' => '',
 			'icon'       => 'fa fa-exclamation-triangle',
 		);
 
 		$default_tabs['mautic-woo-themes'] = array(
-			'name'       => __( 'Email Templates', 'mautic-woo' ),
+			'name'       => __( 'Email Templates', 'enhanced-woocommerce-mautic-integration' ),
 			'dependency' => $common_dependency,
 			'icon'       => 'fas fa-newspaper',
 		);

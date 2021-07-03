@@ -120,17 +120,17 @@ class MauticWooContactProperties {
 			// customer details.
 			$values[] = array(
 				'name'        => 'customer_group',
-				'displayName' => __( 'Customer Group', 'mautic-woo' ),
+				'displayName' => __( 'Customer Group', 'enhanced-woocommerce-mautic-integration' ),
 			);
 			// order details.
 			$values[] = array(
 				'name'        => 'order',
-				'displayName' => __( 'Order', 'mautic-woo' ),
+				'displayName' => __( 'Order', 'enhanced-woocommerce-mautic-integration' ),
 			);
 			// RFM details.
 			$values[] = array(
 				'name'        => 'rfm_fields',
-				'displayName' => __( 'RFM Information', 'mautic-woo' ),
+				'displayName' => __( 'RFM Information', 'enhanced-woocommerce-mautic-integration' ),
 			);
 		} elseif ( 'properties' === $option ) {
 
@@ -222,7 +222,7 @@ class MauticWooContactProperties {
 
 				$group_properties[] = array(
 					'alias'          => 'mwb_customer_group',
-					'label'          => __( 'Customer Group/ User role', 'mautic-woo' ),
+					'label'          => __( 'Customer Group/ User role', 'enhanced-woocommerce-mautic-integration' ),
 					'type'           => 'multiselect',
 					'isVisible'      => false,
 					'isShortVisible' => false,
@@ -234,7 +234,7 @@ class MauticWooContactProperties {
 
 				$group_properties[] = array(
 					'alias'          => 'mwb_last_order_stat',
-					'label'          => __( 'Last Order Status', 'mautic-woo' ),
+					'label'          => __( 'Last Order Status', 'enhanced-woocommerce-mautic-integration' ),
 					'isVisible'      => false,
 					'isShortVisible' => false,
 					'type'           => 'select',
@@ -244,7 +244,7 @@ class MauticWooContactProperties {
 
 				$group_properties[] = array(
 					'alias'          => 'mwb_last_order_ff_stat',
-					'label'          => __( 'Last Order Fulfillment Status', 'mautic-woo' ),
+					'label'          => __( 'Last Order Fulfillment Status', 'enhanced-woocommerce-mautic-integration' ),
 					'isVisible'      => false,
 					'isShortVisible' => false,
 					'type'           => 'select',
@@ -256,7 +256,7 @@ class MauticWooContactProperties {
 					'alias'          => 'mwb_last_order_track_num',
 					'isVisible'      => false,
 					'isShortVisible' => false,
-					'label'          => __( 'Last Order Tracking Number', 'mautic-woo' ),
+					'label'          => __( 'Last Order Tracking Number', 'enhanced-woocommerce-mautic-integration' ),
 					'type'           => 'number',
 				);
 
@@ -264,7 +264,7 @@ class MauticWooContactProperties {
 					'alias'          => 'mwb_last_order_track_url',
 					'isVisible'      => false,
 					'isShortVisible' => false,
-					'label'          => __( 'Last Order Tracking URL', 'mautic-woo' ),
+					'label'          => __( 'Last Order Tracking URL', 'enhanced-woocommerce-mautic-integration' ),
 					'type'           => 'text',
 				);
 
@@ -272,7 +272,7 @@ class MauticWooContactProperties {
 					'alias'          => 'mwb_last_order_ship_date',
 					'isVisible'      => false,
 					'isShortVisible' => false,
-					'label'          => __( 'Last Order Shipment Date', 'mautic-woo' ),
+					'label'          => __( 'Last Order Shipment Date', 'enhanced-woocommerce-mautic-integration' ),
 					'type'           => 'date',
 				);
 
@@ -280,7 +280,7 @@ class MauticWooContactProperties {
 					'alias'          => 'mwb_last_order_num',
 					'isVisible'      => false,
 					'isShortVisible' => false,
-					'label'          => __( 'Last Order Number', 'mautic-woo' ),
+					'label'          => __( 'Last Order Number', 'enhanced-woocommerce-mautic-integration' ),
 					'type'           => 'number',
 				);
 
@@ -288,7 +288,7 @@ class MauticWooContactProperties {
 					'alias'          => 'mwb_last_pay_method',
 					'isVisible'      => false,
 					'isShortVisible' => false,
-					'label'          => __( 'Last Order Payment Method', 'mautic-woo' ),
+					'label'          => __( 'Last Order Payment Method', 'enhanced-woocommerce-mautic-integration' ),
 					'type'           => 'text',
 				);
 
@@ -296,7 +296,7 @@ class MauticWooContactProperties {
 					'alias'          => 'mwb_current_orders',
 					'isVisible'      => false,
 					'isShortVisible' => false,
-					'label'          => __( 'Total Number of Current Orders', 'mautic-woo' ),
+					'label'          => __( 'Total Number of Current Orders', 'enhanced-woocommerce-mautic-integration' ),
 					'type'           => 'number',
 				);
 
@@ -306,7 +306,7 @@ class MauticWooContactProperties {
 					'alias'          => 'mwb_total_val_of_orders',
 					'isVisible'      => false,
 					'isShortVisible' => false,
-					'label'          => __( 'Total Value of Orders', 'mautic-woo' ),
+					'label'          => __( 'Total Value of Orders', 'enhanced-woocommerce-mautic-integration' ),
 					'type'           => 'number',
 				);
 
@@ -314,7 +314,7 @@ class MauticWooContactProperties {
 					'alias'          => 'mwb_avg_order_value',
 					'isVisible'      => false,
 					'isShortVisible' => false,
-					'label'          => __( 'Average Order Value', 'mautic-woo' ),
+					'label'          => __( 'Average Order Value', 'enhanced-woocommerce-mautic-integration' ),
 					'type'           => 'number',
 				);
 
@@ -322,7 +322,7 @@ class MauticWooContactProperties {
 					'alias'          => 'mwb_total_orders',
 					'isVisible'      => false,
 					'isShortVisible' => false,
-					'label'          => __( 'Total Number of Orders', 'mautic-woo' ),
+					'label'          => __( 'Total Number of Orders', 'enhanced-woocommerce-mautic-integration' ),
 					'type'           => 'number',
 				);
 
@@ -330,7 +330,7 @@ class MauticWooContactProperties {
 					'alias'          => 'mwb_first_order_val',
 					'isVisible'      => false,
 					'isShortVisible' => false,
-					'label'          => __( 'First Order Value', 'mautic-woo' ),
+					'label'          => __( 'First Order Value', 'enhanced-woocommerce-mautic-integration' ),
 					'type'           => 'number',
 				);
 
@@ -338,7 +338,7 @@ class MauticWooContactProperties {
 					'alias'          => 'mwb_first_order_date',
 					'isVisible'      => false,
 					'isShortVisible' => false,
-					'label'          => __( 'First Order Date', 'mautic-woo' ),
+					'label'          => __( 'First Order Date', 'enhanced-woocommerce-mautic-integration' ),
 					'type'           => 'date',
 				);
 
@@ -346,7 +346,7 @@ class MauticWooContactProperties {
 					'alias'          => 'mwb_last_order_val',
 					'isVisible'      => false,
 					'isShortVisible' => false,
-					'label'          => __( 'Last Order Value', 'mautic-woo' ),
+					'label'          => __( 'Last Order Value', 'enhanced-woocommerce-mautic-integration' ),
 					'type'           => 'number',
 				);
 
@@ -354,7 +354,7 @@ class MauticWooContactProperties {
 					'alias'          => 'mwb_last_order_date',
 					'isVisible'      => false,
 					'isShortVisible' => false,
-					'label'          => __( 'Last Order Date', 'mautic-woo' ),
+					'label'          => __( 'Last Order Date', 'enhanced-woocommerce-mautic-integration' ),
 					'type'           => 'date',
 				);
 
@@ -362,7 +362,7 @@ class MauticWooContactProperties {
 					'alias'          => 'mwb_acc_creation_date',
 					'isVisible'      => false,
 					'isShortVisible' => false,
-					'label'          => __( 'Account Creation Date', 'mautic-woo' ),
+					'label'          => __( 'Account Creation Date', 'enhanced-woocommerce-mautic-integration' ),
 					'type'           => 'date',
 				);
 
@@ -370,7 +370,7 @@ class MauticWooContactProperties {
 					'alias'          => 'mwb_order_monetary',
 					'isVisible'      => false,
 					'isShortVisible' => false,
-					'label'          => __( 'Order Monetary Rating', 'mautic-woo' ),
+					'label'          => __( 'Order Monetary Rating', 'enhanced-woocommerce-mautic-integration' ),
 					'type'           => 'select',
 					'defaultValue'   => 'null',
 					'properties'     => array( 'list' => $this->get_rfm_rating() ),
@@ -380,7 +380,7 @@ class MauticWooContactProperties {
 					'alias'          => 'mwb_order_frequency',
 					'isVisible'      => false,
 					'isShortVisible' => false,
-					'label'          => __( 'Order Frequency Rating', 'mautic-woo' ),
+					'label'          => __( 'Order Frequency Rating', 'enhanced-woocommerce-mautic-integration' ),
 					'type'           => 'select',
 					'defaultValue'   => 'null',
 					'properties'     => array( 'list' => $this->get_rfm_rating() ),
@@ -390,7 +390,7 @@ class MauticWooContactProperties {
 					'alias'          => 'mwb_order_recency',
 					'isVisible'      => false,
 					'isShortVisible' => false,
-					'label'          => __( 'Order Recency Rating', 'mautic-woo' ),
+					'label'          => __( 'Order Recency Rating', 'enhanced-woocommerce-mautic-integration' ),
 					'type'           => 'select',
 					'defaultValue'   => 'null',
 					'properties'     => array( 'list' => $this->get_rfm_rating() ),
@@ -487,23 +487,23 @@ class MauticWooContactProperties {
 		$rating = array();
 
 		$rating[] = array(
-			'label' => __( '5', 'mautic-woo' ),
+			'label' => __( '5', 'enhanced-woocommerce-mautic-integration' ),
 			'value' => 5,
 		);
 		$rating[] = array(
-			'label' => __( '4', 'mautic-woo' ),
+			'label' => __( '4', 'enhanced-woocommerce-mautic-integration' ),
 			'value' => 4,
 		);
 		$rating[] = array(
-			'label' => __( '3', 'mautic-woo' ),
+			'label' => __( '3', 'enhanced-woocommerce-mautic-integration' ),
 			'value' => 3,
 		);
 		$rating[] = array(
-			'label' => __( '2', 'mautic-woo' ),
+			'label' => __( '2', 'enhanced-woocommerce-mautic-integration' ),
 			'value' => 2,
 		);
 		$rating[] = array(
-			'label' => __( '1', 'mautic-woo' ),
+			'label' => __( '1', 'enhanced-woocommerce-mautic-integration' ),
 			'value' => 1,
 		);
 		$rating[] = array(
@@ -526,11 +526,11 @@ class MauticWooContactProperties {
 		$user_actions = array();
 
 		$user_actions[] = array(
-			'label' => __( 'Yes', 'mautic-woo' ),
+			'label' => __( 'Yes', 'enhanced-woocommerce-mautic-integration' ),
 			'value' => 'yes',
 		);
 		$user_actions[] = array(
-			'label' => __( 'No', 'mautic-woo' ),
+			'label' => __( 'No', 'enhanced-woocommerce-mautic-integration' ),
 			'value' => 'no',
 		);
 		$user_actions   = apply_filters( 'mautic_woo_user_marketing_actions', $user_actions );

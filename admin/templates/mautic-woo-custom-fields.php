@@ -13,7 +13,7 @@ $final_properties               = Mautic_Woo::mautic_woo_get_final_fields();
 ?>
 
 <div class="mauwoo-fields-header mauwoo-common-header text-center">
-	<h2><?php esc_html_e( 'Mautic Custom Fields', 'mautic-woo' ); ?></h2>
+	<h2><?php esc_html_e( 'Mautic Custom Fields', 'enhanced-woocommerce-mautic-integration' ); ?></h2>
 </div>
 <div class="mauwoo-fields-notice">
 </div>
@@ -25,7 +25,7 @@ $final_properties               = Mautic_Woo::mautic_woo_get_final_fields();
 		</div>
 	</div>
 	<div class="mauwoo-progress-notice-bottom">
-		<?php esc_html_e( "Hold on we are creating your custom fields, Please don't refresh the page.", 'mautic-woo' ); ?>
+		<?php esc_html_e( "Hold on we are creating your custom fields, Please don't refresh the page.", 'enhanced-woocommerce-mautic-integration' ); ?>
 	</div>
 </div>
 
@@ -35,13 +35,13 @@ $final_properties               = Mautic_Woo::mautic_woo_get_final_fields();
 	<div class="mauwoo-fields-on-user-choice">
 		<form action="" method="post">
 			<div class="mauwoo-fields-head-text">
-				<?php esc_html_e( 'Select the custom fields you want to create in your Mautic account and start the setup', 'mautic-woo' ); ?>
+				<?php esc_html_e( 'Select the custom fields you want to create in your Mautic account and start the setup', 'enhanced-woocommerce-mautic-integration' ); ?>
 			</div>
 			<div class="mauwoo-actions">
 				<a href="javascript:void(0);" class="mauwoo-action-field mauwoo-button mauwoo-small-button"
-					id="mauwoo-all-fields"><?php esc_html_e( 'Select all', 'mautic-woo' ); ?></a>
+					id="mauwoo-all-fields"><?php esc_html_e( 'Select all', 'enhanced-woocommerce-mautic-integration' ); ?></a>
 				<a href="javascript:void(0);" class="mauwoo-action-field mauwoo-button mauwoo-small-button"
-					id="mauwoo-clear-fields"><?php esc_html_e( 'Clear', 'mautic-woo' ); ?></a>
+					id="mauwoo-clear-fields"><?php esc_html_e( 'Clear', 'enhanced-woocommerce-mautic-integration' ); ?></a>
 			</div>
 			<div class="mauwoo-fields-select">
 
@@ -110,7 +110,7 @@ $final_properties               = Mautic_Woo::mautic_woo_get_final_fields();
 				?>
 			</div>
 			<input type="button" class="mauwoo-button" name="mauwoo_create_selected_fields"
-				value="<?php echo esc_html__( 'Start Setup', 'mautic-woo' ); ?>" id="mauwoo2-create-selected-fields">
+				value="<?php echo esc_html__( 'Start Setup', 'enhanced-woocommerce-mautic-integration' ); ?>" id="mauwoo2-create-selected-fields">
 		</form>
 	</div>
 </div>
@@ -119,15 +119,15 @@ $final_properties               = Mautic_Woo::mautic_woo_get_final_fields();
 
 
 <p class="text-center">
-	<?php esc_html_e( 'Overview of fields available on your Mautic Account. You can create new field directly from here.', ' mautic-woo' ); ?>
+	<?php esc_html_e( 'Overview of fields available on your Mautic Account. You can create new field directly from here.', ' enhanced-woocommerce-mautic-integration' ); ?>
 </p>
 <div class="mauwoo-fields-created">
 	<div class="mauwoo-fields-created-list mauwoo_groups">
 		<table>
 			<thead>
 				<tr>
-					<th><?php esc_html_e( 'Field Name', 'mautic-woo' ); ?></th>
-					<th><?php esc_html_e( 'Action', 'mautic-woo' ); ?></th>
+					<th><?php esc_html_e( 'Field Name', 'enhanced-woocommerce-mautic-integration' ); ?></th>
+					<th><?php esc_html_e( 'Action', 'enhanced-woocommerce-mautic-integration' ); ?></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -157,7 +157,7 @@ $final_properties               = Mautic_Woo::mautic_woo_get_final_fields();
 					</td>
 					<td class="mauwoo-field-checked">
 						<a href="javascript:void(0);" class="button button-primary mauwoo-create-single-field"
-							data-alias="<?php echo esc_attr( $single_property['detail']['alias'] ); ?>"><?php esc_html_e( 'Create', 'mautic-woo' ); ?></a>
+							data-alias="<?php echo esc_attr( $single_property['detail']['alias'] ); ?>"><?php esc_html_e( 'Create', 'enhanced-woocommerce-mautic-integration' ); ?></a>
 						<i class="fas fa-circle-notch fa-spin mauwoo-hide mauwoo-spinner"></i>
 					</td>
 				</tr>

@@ -321,7 +321,7 @@
 					},
 				}
 			);
-			jQuery( '#mautic_go_pro_link' ).live(
+			jQuery( '#mautic_go_pro_link' ).on(
 				'click',
 				function(e) {
 					e.preventDefault();

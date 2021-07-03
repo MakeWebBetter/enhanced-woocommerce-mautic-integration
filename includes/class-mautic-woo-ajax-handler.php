@@ -74,7 +74,7 @@ class MauticWooAjaxHandler {
 
 		$response = array(
 			'status'  => true,
-			'message' => __( 'Success', 'mautic-woo' ),
+			'message' => __( 'Success', 'enhanced-woocommerce-mautic-integration' ),
 		);
 
 		check_ajax_referer( 'mauwoo_security', 'mauwooSecurity' );
@@ -89,7 +89,7 @@ class MauticWooAjaxHandler {
 			if ( ! $status ) {
 
 				$response['status']  = false;
-				$response['message'] = __( 'Something went wrong, please check your Keys', 'mautic-woo' );
+				$response['message'] = __( 'Something went wrong, please check your Keys', 'enhanced-woocommerce-mautic-integration' );
 			}
 		}
 
@@ -268,7 +268,7 @@ class MauticWooAjaxHandler {
 
 		$response = array(
 			'code'    => 400,
-			'message' => __( 'Something went wrong, Please check logs', 'mautic-woo' ),
+			'message' => __( 'Something went wrong, Please check logs', 'enhanced-woocommerce-mautic-integration' ),
 			'label'   => '',
 		);
 
@@ -308,7 +308,7 @@ class MauticWooAjaxHandler {
 					} elseif ( 'created' === $single_property['status'] ) {
 
 						$response['code']    = 201;
-						$response['message'] = __( 'Field already exists', 'mautic-woo' );
+						$response['message'] = __( 'Field already exists', 'enhanced-woocommerce-mautic-integration' );
 					}
 
 					$response['label'] = $single_property['detail']['label'];

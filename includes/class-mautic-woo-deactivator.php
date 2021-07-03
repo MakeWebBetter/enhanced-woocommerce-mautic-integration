@@ -31,5 +31,6 @@ class Mautic_Woo_Deactivator {
 	public static function deactivate() {
 		wp_clear_scheduled_hook( 'mautic_woo_cron_schedule' );
 		unlink( WC_LOG_DIR . 'mautic-woo-logs.log' );
+
 	}
 }

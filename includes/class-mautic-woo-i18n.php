@@ -34,7 +34,7 @@ class Mautic_Woo_I18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'mautic-woo',
+			'enhanced-woocommerce-mautic-integration',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);

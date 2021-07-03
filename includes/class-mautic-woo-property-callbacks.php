@@ -157,7 +157,15 @@ class MauticWooPropertyCallbacks {
 	 */
 	public function _get_mail() {
 		// get it from user object.
-		return $this->_user->data->user_email;
+		if( !empty( $this->_user) ) {
+			$data ="";
+			$data = $this->_user->data;
+			if( !empty( $data ) ) {
+				$user_email = "";
+				$user_email = $data->user_email;
+			}
+		}
+		return $user_email;
 	}
 
 
@@ -258,9 +266,11 @@ class MauticWooPropertyCallbacks {
 
 				$this->_cache['mwb_total_val_of_orders'] += floatval( $order_total );
 
-				if ( in_array( $order_status, array( 'failed', 'cancelled', 'refunded', 'completed' ), true ) ) {
+				if ( $order_status !== 'failed' && $order_status !== 'cancelled' && $order_status !== 'refunded' && $order_status !== 'completed' ) {
+
 					$this->_cache['mwb_current_orders'] += 1;
 				}
+				
 				// Check for last order and finish all last order calculations.
 				if ( ! $counter ) {
 					// last order date.
